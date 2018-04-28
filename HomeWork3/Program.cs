@@ -316,12 +316,18 @@ namespace HomeWork3
                 return $"{numerator}";
             }
 
-            if (numerator > denominator)
+            if (Math.Abs(numerator) > Math.Abs(denominator))
             {
-                return numerator / denominator + " " + numerator % denominator + "/" + denominator;
+                if (numerator % denominator == 0)
+                {
+                    return $"{numerator / denominator}";
+                } else
+                {
+                    return $"{numerator / denominator} {Math.Abs(numerator % denominator)}/{Math.Abs(denominator)}";
+                }                
             }
 
-            return numerator + "/" + denominator;
+            return $"{numerator}/{denominator}";
         }
 
     }
