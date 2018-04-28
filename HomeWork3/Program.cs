@@ -188,6 +188,9 @@ namespace HomeWork3
         }
     }
 
+    /// <summary>
+    /// Дроби
+    /// </summary>
     class Fraction
     {
         /// <summary>
