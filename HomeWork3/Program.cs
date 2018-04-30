@@ -308,9 +308,7 @@ namespace HomeWork3
         /// </summary>
         /// <returns></returns>
         public override string ToString()
-        {
-            // Symbols "(" and ")" are using just to highlight Fraction
-                        
+        {                       
             if (denominator == 1 || numerator == 0)
             {
                 return $"{numerator}";
